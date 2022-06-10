@@ -91,6 +91,17 @@
             </div> <!-- end of container -->
         </header> <!-- end of ex-header -->
         <!-- end of header -->
+        
+
+        <!--Calendar-->
+        <centre>
+        <h1> Hello {{ name }}! Booking for {{ month }} {{ year }}</h1>
+        As of {{ time }}
+        <br><br>
+        {{ cal|safe }}
+        <br><br>
+        Copyright (c) {{ current_year }}
+        </centre>
 
 
         <!-- Form -->
