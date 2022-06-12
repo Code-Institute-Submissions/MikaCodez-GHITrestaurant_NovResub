@@ -5,19 +5,19 @@ from calendar import HTMLCalendar
 def home(request, year, month):
     name= "user"
     month = month.capitalize()
-    #convert month from name to number
+    # convert month from name to number
     month_number = list(calendar.month_name).index(value)
     month_number = int(month_number)
 
-    #create a calendar
+    # create a calendar
     cal = HTMLCalendar().formatmonth(
         year, month_number)
 
-    #current year
+    # current year
     now = datetime.now()
     current_year = now.year
 
-    #current time
+    # current time
     time = now.strftime('%I:%M:%p')
 
     return render(request,
