@@ -1,9 +1,10 @@
-from django.shortcuts import render
 import calendar
 from calendar import HTMLCalendar
+from django.shortcuts import render
+
 
 def home(request, year, month):
-    name= "user"
+    name = "user"
     month = month.capitalize()
     # convert month from name to number
     month_number = list(calendar.month_name).index(value)

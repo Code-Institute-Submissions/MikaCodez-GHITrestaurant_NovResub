@@ -1162,7 +1162,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background: linear-gradient(to bottom right, rgba(32, 185, 94, 1), rgba(31, 196, 202, 1));
+	background: linear-gradient(to bottom right, rgb(0,0,0), rgb(36,40,49));
 }
 
 .ex-header h1 {

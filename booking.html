@@ -30,7 +30,7 @@
         <link href="css/styles.css" rel="stylesheet">
         
         <!-- Favicon  -->
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="images/c.png">
     </head>
     <body data-spy="scroll" data-target=".fixed-top">
         
@@ -42,7 +42,7 @@
                 <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/ghlogos.svg" alt="alternative"></a> 
 
                 <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
@@ -51,28 +51,22 @@
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="article.html">Article <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="features.html">Features</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link page-scroll" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                                <a class="dropdown-item page-scroll" href="menu.html">Menu</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="contact.html">Contact</a>
+                            <a class="nav-link page-scroll" href="booking.html">Booking</a>
                         </li>
                     </ul>
                     <span class="nav-item">
-                        <a class="btn-outline-sm page-scroll" href="index.html#download">Download</a>
+                        <a class="btn-outline-sm page-scroll" href="#download">Reservation</a>
                     </span>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
@@ -85,7 +79,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <h1>Viverra justo necro</h1>
+                        <h1>GHIT Booking</h1>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -102,6 +96,16 @@
         <br><br>
         Copyright (c) {{ current_year }}
         </centre>
+        <br><br>
+
+        <!--The form starts here-->
+      <form action="https://formdump.codeinstitute.net/" method="post" target="_blank">
+        <!--Fill in proposed Date and room-->
+        <fieldset class="container border-bottom pb-5 mb-5">
+           <legend>Choose a date</legend>
+           <label class="form-label" for="BookIN">Book in date</label>
+           <input class="form-control bg-secondary mb-3" id="BookIN" type="date" name="Book in" min="2022-06-01" max="2028-07-01" title="you can book up to 6 years in advance" required>
+          </fieldset>
 
 
         <!-- Form -->
@@ -142,16 +146,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <p class="mb-5">Mattis rhoncus urna neque <a href="mailto:contact@name.com">contact@name.com</a>
-                        <br>Justo nec ultric <a href="tel:123-456-7890">+123-456-7890</a></p>
-                        <h2 class="mb-3">Pretium fusceid</h2>
-                        <p class="mb-5">Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Vel elit scelerisque mauris pellentesque. Maecenas volutpat blandit aliquam etiam erat velit. Nibh sed pulvinar proin gravida hendrerit. Orci dapibus ultrices in iaculis nunc sed. Facilisis sed odio morbi quis commodo odio aenean. Risus quis varius.</p>
+                        <p class="mb-5">For More information contact us here: contact@ghit.com <a href="mailto:contact@ghit.com">contact@ghit.com</a>
+                        <br>Call us here: <a href="tel:39-153-246-9713">+39 153 246 9713</a></p>
+                        <h2 class="mb-3">How to find us</h2>
+                        <p class="mb-5">We are located in Bari Central, right in the heart of the Famous port city of Puglia.</p>
                             
                         <div class="map-responsive">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049" allowfullscreen></iframe>
                         </div>
                             
-                        <p class="mb-5">Leo a diam sollicitudin tempor id mattis aliquam faucibus purus in massa tempor nec. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Vel turpis nunc eget lorem dolor sed viverra ipsum. Cursus eget nunc scelerisque viverra mauris in massa tincidunt nunc pulvinar sapien</p>
+                        <p class="mb-5">You can also download our menu here:</p>
                         <a class="btn-solid-reg mb-5" href="index.html#header">Download</a>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->

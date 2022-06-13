@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+import views
 
 urlpatterns = [
     # int: numbers
@@ -7,5 +7,5 @@ urlpatterns = [
     # path: whole urls/
     # slug: hyphen-and_underscores
     # path
-    path('<int:year>/<str:month>', views.booking, name="booking"),
+    path('<int:year>/<str:month>', views.home(request, year, month), name="booking"),
 ]
