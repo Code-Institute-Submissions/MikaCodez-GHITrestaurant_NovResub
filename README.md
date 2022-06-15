@@ -1,4 +1,4 @@
-# GHITrestaurant
+# GHIT Restaurant
 GHIT Restaurant is a Fusion of Ghanaian and Italian cuisine based in London to dine in.
 
 
@@ -30,7 +30,19 @@ The Admins should be able to manage the bookings of the User, being able to appr
 The Application is designed as a restaurant website which will be the first introduction to the user of what they can expect to find and enjoy their restaurant experience. The site provides an idea of the dishes available, the location of the restaurant and allows the user to be able to Manage their booking and reservation.
 
   
-### WorkFlow
+### Wireframes
+
+Wireframes where designed in Figma with rough concept in mind.
+Each pages wireframes includes mobile(small screen) & desktop(large screens).
+
+![ghit wireframes 1](https://user-images.githubusercontent.com/65243328/173871566-ee33e486-a93f-4ad9-9f98-ea1f6fc27278.JPG)
+![ghit wireframes 2](https://user-images.githubusercontent.com/65243328/173871576-5a6b8f42-7d14-47c1-acc9-1a9921e25239.JPG)
+![ghit wireframes 3](https://user-images.githubusercontent.com/65243328/173871583-92e04afc-e638-46dc-b45e-b524f160f050.JPG)
+
+### Colors
+
+![ghit](https://user-images.githubusercontent.com/65243328/173874290-522f1571-b649-466b-83a3-3dfdb86aa940.png)
+
 
 
 
