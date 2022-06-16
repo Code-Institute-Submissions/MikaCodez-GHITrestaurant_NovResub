@@ -45,11 +45,23 @@ Each pages wireframes includes mobile(small screen) & desktop(large screens).
 ![coolors ghit](https://user-images.githubusercontent.com/65243328/174058277-86a93d21-2654-4ed0-a6f1-d3cf6e754b8a.JPG)
 
 #000002 Rich Black used for the Gradient for the main bulk of the site. To give the clean aesthetic.
+
+
 #59CBCF Dark Turquoise for the Buttons on the site to help them stand alone.
+
+
 #DED9D9 Gainsboro for the intermediary positions of the site to help create balance.
+
+
 #D4CE91 Medium Champagne on the menu sections of the website to help the food and drinks stand out.
+
+
 #446D03 Dark Olive Green on some of the vegetables of the website.
+
+
 #25252F Raisin Black on the Gradien of the main bulk of the site.
+
+
 #FCFBF8 Baby powder on the intermediary positions of the site to help create balance.
 
 
