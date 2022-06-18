@@ -1,1 +1,1 @@
-web : gunicorn ghit.wsgi
+web : gunicorn reservations.wsgi
