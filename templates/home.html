@@ -1,3 +1,8 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,10 +44,10 @@
             <div class="container">
                 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
+                <!-- <a class="navbar-brand logo-text page-scroll" href="home.html">Name</a> -->
 
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/ghlogos.svg" alt="alternative"></a> 
+                <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="images/ghlogos.svg" alt="alternative"></a> 
 
                 <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
@@ -97,7 +102,9 @@
             </div> <!-- end of container -->
         </div> <!-- end of cards-1 -->
         <!-- end of small features -->
+        {% endblock %}
 
+        {% block content %}
 
         <!-- Description -->
         <div class="basic-1">
@@ -382,7 +389,7 @@
         </div> <!-- end of copyright --> 
         <!-- end of copyright -->
         
-            
+        {% endblock %}
         <!-- Scripts -->
         <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
