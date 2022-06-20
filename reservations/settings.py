@@ -58,6 +58,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CLOUDINARY = {
+      'cloud_name': 'dsitpgfh8',  
+      'api_key': '484766398377515',  
+      'api_secret': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
+      'api_proxy': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
+}
+
 ROOT_URLCONF = 'reservations.urls'
 
 TEMPLATES = [
