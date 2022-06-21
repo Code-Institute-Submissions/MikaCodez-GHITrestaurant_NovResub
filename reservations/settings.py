@@ -43,13 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
-    'cloudinary',
-    'booking',
-    'home',
-    'django_summernote',
-    'crispy_forms',
     'allauth',
     'allauth.account',
+    'cloudinary',
+    'crispy_forms',
+    'django_summernote',
+    'booking',
+    'home',
 ]
 
 SITE_ID =1
