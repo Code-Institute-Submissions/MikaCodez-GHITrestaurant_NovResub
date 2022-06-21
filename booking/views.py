@@ -5,10 +5,6 @@ from .forms import CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
 
-def index(request):
-    """ A view to return the home page """
-
-    return render(request, 'templates/home.html')
 
 
 class HomeView(LoginRequiredMixin, TemplateView):
