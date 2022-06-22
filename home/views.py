@@ -1,20 +1,30 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
+
+# code from https://docs.djangoproject.com/en/4.0/ref/class-based-views/base/#django.views.generic.base.TemplateView
 
 
+class PageTitleViewMixin:
+    """Mixin used to dynamically add titles to templates"""
 
-def home(request):
-    """ A view to return the home page """
+    title = ""
 
-    return render(request, 'templates/home.html')
+    def get_title(self):
+        """Returns a title from the object"""
+        return self.title
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        title = self.get_title()
+
+        if not title:
+            raise ValueError("Fill in the page title")
+        context["title"] = self.get_title()
+        return context
 
 
-def menu(request):
-    """ A view to return the menu page """
+class HomeView(PageTitleViewMixin, TemplateView):
+    """Homepage view"""
 
-    return render(request, 'templates/menu.html')
-
-
-def booking(request):
-    """ A view to return the booking page """
-
-    return render(request, 'templates/booking.html')
+    template_name = "home.html"
+    title = "Home"
