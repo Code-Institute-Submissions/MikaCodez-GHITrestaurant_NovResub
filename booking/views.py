@@ -4,7 +4,7 @@ from .models import Post
 from .forms import CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
-
+from django.views.generic import TemplateView
 
 
 class HomeView(LoginRequiredMixin, TemplateView):

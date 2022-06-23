@@ -28,3 +28,15 @@ class HomeView(PageTitleViewMixin, TemplateView):
 
     template_name = "home.html"
     title = "Home"
+
+class BookingsView(PageTitleViewMixin, TemplateView):
+    """Displays the Bookings template view"""
+
+    title = "Booking"
+    template_name = "booking.html"
+
+class MenuView(PageTitleViewMixin, TemplateView):
+    """Menupage view"""
+
+    template_name = "menu.html"
+    title = "Menu"
