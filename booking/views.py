@@ -5,6 +5,13 @@ from .forms import CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
 from django.views.generic import TemplateView
+from home.views import PageTitleViewMixin
+
+class BookingsView(PageTitleViewMixin, TemplateView):
+    """Displays the Bookings template view"""
+
+    title = "booking"
+    template_name = "booking.html"
 
 
 class HomeView(LoginRequiredMixin, TemplateView):
