@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load booking %}
 
 {% block content %}
     <head>
@@ -30,6 +31,8 @@
         <br>
         <!--The form starts here-->
       <form action="https://formdump.codeinstitute.net/" method="post" target="_blank">
+        {{ booking.my_date_field }}
+
         <!--Fill in proposed Date and time-->
         <fieldset class="container border-bottom pb-5 mb-5">
            <legend>Choose a date</legend>
@@ -56,14 +59,23 @@
                                 <input type="text" class="form-control-input" id="cname" required>
                                 <label class="label-control" for="cname">Name</label>
                             </div>
+                            <div class="control">
+                                {% render_field form.name class="input" placeholder="Your name" %}
+                              </div>
                             <div class="form-group">
                                 <input type="email" class="form-control-input" id="cemail" required>
                                 <label class="label-control" for="cemail">Email</label>
                             </div>
+                            <div class="control">
+                                {% render_field form.email class="input" placeholder="you@email.com" %}
+                              </div>
                             <div class="form-group">
                                 <textarea class="form-control-textarea" id="cmessage" required></textarea>
                                 <label class="label-control" for="cmessage">Your message</label>
                             </div>
+                            <div class="control">
+                                {% render_field form.message rows="10" placeholder="Your message" class+="textarea" %}
+                              </div>
                             <div class="form-group">
                                 <button type="submit" class="form-control-submit-button">Submit Message</button>
                             </div>
