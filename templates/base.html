@@ -93,7 +93,7 @@
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
-        {% endblock content %}
+        {% endblock %}
     </main>
 
     <!-- Footer -->
@@ -156,6 +156,7 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+    
     {% block scripts %}
     <script>
         setTimeout(function () {
@@ -164,7 +165,6 @@
             alert.close();
         }, 2500);
     </script>
-</body>
 
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -175,5 +175,6 @@
 <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
 <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-{% endblock scripts %}
+{% endblock %}
+</body>
 </html>
