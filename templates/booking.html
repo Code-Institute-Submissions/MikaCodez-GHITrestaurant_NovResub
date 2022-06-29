@@ -19,7 +19,7 @@
         <!--Calendar-->
         <br>
         <!--The form starts here-->
-      <form action="https://formdump.codeinstitute.net/" method="post" target="_blank">
+      
         
         <!--Fill in proposed Date and time-->
         <fieldset class="container border-bottom pb-5 mb-5">
@@ -42,7 +42,7 @@
                     <div class="col-xl-10 offset-xl-1">
                         
                         <!-- Contact Form -->
-                        <form class="mt-5">
+                        <form class="mt-5" onsubmit="return sendMail(this);">
                             {{ form }}
                             <!-- <div class="form-group">
                                 <input type="text" class="form-control-input" id="cname" required>
@@ -86,7 +86,7 @@
                         </div>
                             
                         <p class="mb-5">You can also download our menu here:</p>
-                        <a class="btn-solid-reg mb-5" href="home.html#header">Download</a>
+                        <a class="btn-solid-reg mb-5" href="{% url 'menu' %}">Download</a>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -102,6 +102,7 @@
         <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
         <script src="{% static 'js/morphext.min.js' %}"></script> <!-- Morphtext rotating text in the header -->
         <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+        <script src="{% static 'js/sendEmail.js' %}"></script>
         <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
         {% endblock %}
     </body>
