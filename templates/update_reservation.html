@@ -6,9 +6,10 @@
     {% if user.is_authenticated %}
     {% if reservation.author_id == user.id %}
 
-    <h1>Update your Reservation as
+    <h1 class="text-center">Update your Reservation as
         <br>
         {{ user.username }}</h1>
+    <div class="text-center p-2">
     <form method="post">
         {% csrf_token %}
         {% load widget_tweaks %}
@@ -23,6 +24,7 @@
         {% endfor %}
         <button type='submit' class="btn btn-success btn-lg">Update Reservation</button>
     </form>
+    </div>
     <a href="{% url 'reservation_detail' %}" class="btn btn-secondary btn-lg mt-4">Go Back</a>
 
 

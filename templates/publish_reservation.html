@@ -5,19 +5,21 @@
 <div class="container">
 
     {% if user.is_authenticated %}
-    <h1>Write a Reservation as
+    <h1 class="text-center">Write a Reservation as
         <br>
         {{ user.username }}</h1>
+    <div class="text-center p-2">
     <form method="post">
         {% csrf_token %}
         {{ reservation_form | crispy }}
         <button class="btn btn-success btn-lg">Submit Reservation</button>
     </form>
+    </div>
     <a href="{% url 'reservation_detail' %}" class="btn btn-secondary btn-lg mt-4">Go Back</a>
     {% else %}
     <p class="h2">Oops! You don't have access to this page, please <span class="link-inline"><a
                 href="{% url 'account_login' %}">Login</a></span> to leave a reservation</p>
-    <a href="{% url 'reservation_detail' %}" class="btn btn-secondary btn-lg mt-4">Go Back</a>
+    <a href="{% url 'reservation_detail' %}" class="btn btn-secondary btn-lg mt-4" class="text-center p-2">Go Back</a>
     {% endif %}
-</div>
+
 {% endblock content %}
