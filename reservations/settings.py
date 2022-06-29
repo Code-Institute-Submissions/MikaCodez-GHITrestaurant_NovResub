@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ghit-reservation.herokuapp.com', 'localhost']
 
@@ -81,11 +81,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CLOUDINARY = {
-      'cloud_name': 'dsitpgfh8',  
-      'api_key': '484766398377515',  
-      'api_secret': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
-      'api_proxy': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
+# CLOUDINARY = {
+#       'cloud_name': 'dsitpgfh8',  
+#       'api_key': '484766398377515',  
+#       'api_secret': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
+#       'api_proxy': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
+# }
+
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 
 ROOT_URLCONF = 'reservations.urls'
