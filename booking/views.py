@@ -7,6 +7,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
 from django.views.generic import TemplateView
 from home.views import PageTitleViewMixin
+from django.contrib import messages
+from django.urls import reverse_lazy
 
 class BookingsView(PageTitleViewMixin, TemplateView):
     """Displays the Bookings template view"""

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container w-50">
+
+    {% if user.is_authenticated %}
+    {% if reservation.author_id == user.id %}
+
+    <h1>Update your Reservation as
+        <br>
+        {{ user.username }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% load widget_tweaks %}
+        {% for field in form %}
+
+        <div class="form-group {% if field.errors %} alert alert-danger {% endif %}">
+            {{ field.errors }}
+            {{ field.label_tag}}
+            {% render_field field class="form-control" %}
+        </div>
+
+        {% endfor %}
+        <button type='submit' class="btn btn-success btn-lg">Update Reservation</button>
+    </form>
+    <a href="{% url 'reservation_detail' %}" class="btn btn-secondary btn-lg mt-4">Go Back</a>
+
+
+    {% else %}
+    <p class="h2">Oops! You don't have access to update this reservation, please <span class="link-inline"><a
+                href="{% url 'account_login' %}">Login</a></span> to the correct account to update.</p>
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock content %}
