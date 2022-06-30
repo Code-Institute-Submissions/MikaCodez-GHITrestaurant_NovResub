@@ -18,6 +18,9 @@ I troubleshooted this by making some changes to settings.py file thanks To Scott
 
 ![clouindary error1](https://user-images.githubusercontent.com/65243328/176645228-bf756a86-030a-4d29-ba20-39064d5c80ef.JPG)
 
+Also facing a temporary issue with Updating and Deleting Reservation records for Users.
+This will be fixed in Future update!
+
 ## Validator Testing
 
 ### LightHouse
