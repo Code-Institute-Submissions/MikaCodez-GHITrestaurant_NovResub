@@ -132,7 +132,7 @@ Allowing users to be able to have a delivery future and order directly from the 
 
 
 ## Testing
-[Link to TESTING.MD here:](https://mikacodez.github.io/mellowte/](https://github.com/MikaCodez/GHITrestaurant/blob/main/Testing.md)
+[Link to TESTING.MD here:](https://github.com/MikaCodez/GHITrestaurant/blob/main/Testing.md)
 
 
 ## Deployment
