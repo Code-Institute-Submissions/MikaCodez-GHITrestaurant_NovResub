@@ -116,4 +116,4 @@ As a Site Admin I can approve Reservations before it is published so that the us
 ![responsive desktop](https://user-images.githubusercontent.com/65243328/176651699-ad485f01-70b3-46f6-af9d-de8c35d14a04.JPG)
 
   
-[Back to Readme]([https://mikacodez.github.io/mellowte/](https://github.com/MikaCodez/GHITrestaurant#readme))
+[Back to Readme](https://github.com/MikaCodez/GHITrestaurant#readme)
