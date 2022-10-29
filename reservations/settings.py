@@ -81,15 +81,19 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CLOUDINARY = {
-#       'cloud_name': 'dsitpgfh8',  
-#       'api_key': '484766398377515',  
-#       'api_secret': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
-#       'api_proxy': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
+# CLOUDINARY_URL = {
+#       'CLOUD_NAME': 'dsitpgfh8',  
+#       'API_KEY': '484766398377515',  
+#       'API_SECRET': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
+#       'API_PROXY': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
 # }
 
 CLOUDINARY_STORAGE = {
-    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL'),
+    'CLOUD_NAME': 'dsitpgfh8',  
+    'API_KEY': '484766398377515',  
+    'API_SECRET': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
+    'API_PROXY': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
 }
 
 ROOT_URLCONF = 'reservations.urls'
