@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block content %}
-
-<h1>Reservations</h1>
-<div class="row">
-    <div class="col-12 mt-3 left">
+<!-- Header -->
+<header class="ex-header">
+    <div class="container">
         <div class="row">
-            {% for reservation in reservation_list %}
+            <div class="col-xl-10 offset-xl-1">
+                <h1 class="text-center">GHIT Reservations</h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+{% for reservation in reservation_list %}
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4 h-100 bg-grey">
@@ -69,6 +75,5 @@
 {% endblock content %}
 
 {% block scripts %}
-{% load static %}
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

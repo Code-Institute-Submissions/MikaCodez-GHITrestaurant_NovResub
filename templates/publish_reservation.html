@@ -5,9 +5,20 @@
 <div class="container">
 
     {% if user.is_authenticated %}
-    <h1 class="text-center">Write a Reservation as
-        <br>
-        {{ user.username }}</h1>
+    <!-- Header -->
+<header class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <h1 class="text-center">Write a Reservation as
+                    <br>
+        {{ user.username }}
+                </h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
     <div class="text-center p-2">
     <form method="post">
         {% csrf_token %}

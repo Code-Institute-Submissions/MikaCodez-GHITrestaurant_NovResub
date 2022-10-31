@@ -10,8 +10,6 @@ from django.contrib import messages
 from django.urls import reverse_lazy
 
 
-
-
 class ReservationList(PageTitleViewMixin, generic.ListView):
     """List view for displaying user Reservations"""
 
