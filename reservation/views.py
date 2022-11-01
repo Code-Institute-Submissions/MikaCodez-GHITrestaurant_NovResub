@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, UpdateView, DeleteView
 from home.views import PageTitleViewMixin
 from .forms import ReservationForm
 from .models import Reservation
@@ -52,7 +53,8 @@ class CreateReservation(PageTitleViewMixin, View):
         return redirect("reservation_detail")
 
 
-class UpdateReservation(PageTitleViewMixin, generic.UpdateView):
+# @login_required
+class UpdateReservation(LoginRequiredMixin, PageTitleViewMixin, UpdateView):
     """Class View to update an existing Reservation"""
 
     model = Reservation
@@ -63,7 +65,8 @@ class UpdateReservation(PageTitleViewMixin, generic.UpdateView):
     success_url = reverse_lazy("reservation_detail")
 
 
-class DeleteReservation(PageTitleViewMixin, generic.DeleteView):
+# @login_required
+class DeleteReservation(LoginRequiredMixin, PageTitleViewMixin, DeleteView):
     """Class view to delete a Reservation"""
 
     model = Reservation

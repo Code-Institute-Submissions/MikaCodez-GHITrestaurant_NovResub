@@ -25,9 +25,9 @@
 
                         {% if reservation.author_id == user.id %}
                         <div class="button-box col-lg-12">
-                            <a href="{{reservation.pk}}/update" class="btn btn-secondary btn-lg mt-4">Update your
+                            <a href="{% url 'update_reservation' reservation.pk %}" class="btn btn-secondary btn-lg mt-4">Update your
                                 Reservation</a>
-                            <a href="{{reservation.pk}}/delete" class="btn btn-danger btn-lg mt-4">Delete your
+                            <a href="{% url 'delete_reservation' reservation.pk %}" class="btn btn-danger btn-lg mt-4">Delete your
                                 Reservation</a>
                         </div>
                         {% endif %}
