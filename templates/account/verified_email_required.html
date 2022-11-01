@@ -5,8 +5,18 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
-
+<!-- Header -->
+<header class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <h1 class="text-center">{% trans "Verify Your E-mail Address" %}
+                </h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </header> <!-- end of ex-header -->
+  <!-- end of header -->
 {% url 'account_email' as email_url %}
 
 <p>{% blocktrans %}This part of the site requires us to verify that

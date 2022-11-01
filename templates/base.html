@@ -111,9 +111,9 @@
                     <div class="footer-col second">
                         <h6>Links</h6>
                         <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                            <li>Important: <a href="#">Terms & Conditions</a>, <a href="#">Privacy Policy</a></li>
                             <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                            <li>Menu: <a href="article.html">Article</a>, <a href="features.html">Features</a>, <a href="pricing.html">Pricing</a>, <a href="contact.html">Contact</a></li>
+                            <li>Menu: <a href="{% url 'menu' %}">Article</a>, <a href="{% url 'menu' %}">Features</a>, <a href="{% url 'booking' %}">Pricing</a>, <a href="{% url 'booking' %}">Contact</a></li>
                         </ul>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col third">
@@ -166,7 +166,7 @@
             let messages = document.getElementById('msg');
             let alert = new bootstrap.Alert(messages);
             alert.close();
-        }, 200);
+        }, 2000);
     </script>
 
     <script type="text/javascript"

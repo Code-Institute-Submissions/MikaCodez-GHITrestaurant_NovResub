@@ -5,7 +5,19 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1 class="text-center">{% trans "Sign Up" %}</h1>
+<!-- Header -->
+<header class="ex-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+              <h1 class="text-center">{% trans "Sign Up" %}
+              </h1>
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+<h1 class="text-center"></h1>
 
 <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
