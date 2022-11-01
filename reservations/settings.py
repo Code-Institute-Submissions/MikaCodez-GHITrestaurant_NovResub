@@ -60,6 +60,16 @@ SITE_ID =1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
@@ -80,13 +90,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-# CLOUDINARY_URL = {
-#       'CLOUD_NAME': 'dsitpgfh8',  
-#       'API_KEY': '484766398377515',  
-#       'API_SECRET': 'mjt7Yf0hp4aMq_nV5TI-5J2ZwLM',
-#       'API_PROXY': 'https://484766398377515:mjt7Yf0hp4aMq_nV5TI-5J2ZwLM@dsitpgfh8',
-# }
 
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL'),
