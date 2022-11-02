@@ -30,7 +30,7 @@
           <br>
           <fieldset class="container border-bottom pb-5 mb-5">
             <legend>Choose a time slot</legend>
-            <label class="form-label" for="BookIN">Book in Time</label>
+            <label class="form-label">Book in Time</label>
             <input class="form-control bg-secondary mb-3" id="BookIN" type="time" name="Book in" min="12:00" max="23:30" title="Opening times 12pm - 11.30pm" required>
            </fieldset>
 
@@ -44,20 +44,6 @@
                         <!-- Contact Form -->
                         <form class="mt-5" onsubmit="return sendMail(this);">
                             {{ form }}
-                            <!-- <div class="form-group">
-                                <input type="text" class="form-control-input" id="cname" required>
-                                <label class="label-control" for="cname">Name</label>
-                            </div>
-                            <div class="control">
-                              </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="cemail" required>
-                                <label class="label-control" for="cemail">Email</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                                <label class="label-control" for="cmessage">Your message</label>
-                            </div> -->
                             <div class="form-group">
                                 <button type="submit" class="form-control-submit-button">Submit Message</button>
                             </div>
