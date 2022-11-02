@@ -10,6 +10,7 @@ from home.views import PageTitleViewMixin
 from django.contrib import messages
 from django.urls import reverse_lazy
 
+
 class BookingsView(PageTitleViewMixin, TemplateView):
     """Displays the Bookings template view"""
 
@@ -20,6 +21,7 @@ class BookingsView(PageTitleViewMixin, TemplateView):
 class HomeView(LoginRequiredMixin, TemplateView):
     template_name = "home.html"
 
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -28,7 +30,6 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -45,10 +46,10 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
@@ -76,12 +77,12 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
             },
         )
 
+
 class PostLike(View):
-    
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -89,10 +90,10 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 
 
 def booking(request):
     form = ContactForm()
-    context = {'form' : form}
-    return render(request, 'booking.html', context)
+    context = {"form": form}
+    return render(request, "booking.html", context)
