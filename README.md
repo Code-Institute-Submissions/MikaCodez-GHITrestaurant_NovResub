@@ -10,12 +10,31 @@ GHIT Restaurant is a Fusion of Ghanaian and Italian cuisine based in London to d
 ### Users
 The user should be able to interact with the website freely and be able to visit the menu, book and reserve a table with a date/time of their choice. They will be able to also Sign up and login with an authenticated account that allows them to interact with their booking and write about their dietary requirements such as allergies etc.
 
+This Site Application is for users who are fond of trying different recipes than what they are used to as well as different types of drinks.
+
+Also giving them the option to create an account for future reference of handling all their reservations personally.
+Only the user will be able to handle their own Reservation and cannot be edited by other users or staff members but Admins only.
+
 ### Admins
 The Admins should be able to manage the bookings of the User, being able to approve, delete requests that are received from the booking.
+
+The Admin can also apply the permissions for other staff members of what level of account they can have stored on the site. 
+This will allow the employees to manage bookings and reservation requests made by users, Allowing for a flowing work system
+rather than being handled by one individual.
 
 ### Agile Methodology
 
 Agile Methodology was used via Github Projects Kanban board in order to create user stories and execute them as issues in a sprint fashion.
+
+This was a good way to match the Sprint/Scrum like setup of real world Software development projects.
+By Assigning tickets to myself in a 3 layered structure fashion, that being of Todo, In progress and Done, Helped me manage all the 
+User story tasks in an arranged manner.
+
+Settling tickets one by one and making sure all tasks are closed. Dealing with the tickets in this way give you focus and clear
+target of how the large scale project can be executed in small projects one at a time making it not feel overwhelming.
+
+In future projects of this same kind I can see the great benefits of a Kanban board like Github Projects and assigning tasks to other
+developers to get the job done.
 
 ### User Stories
 | iD | Story | Resolution |
@@ -26,10 +45,47 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 | #4 | Make A booking | Booking Section |
 | #5 | View Booking | Reservation App |
 | #6 | Cancel booking | Reservation App |
-| #7 | Send an email request for special booking/special requirements | Booking section |
+| #7 | Send an reservation request for special booking/special requirements | Resevration section |
 | #8 | Admin can manage user account | Admin App |
 | #9 | Admin can manage user booking | Admin App |
 | #10 | Admin can delete user account/booking | Admin App |
+
+
+### Site User
+
+•As a user I have the option to make a call back request via the booking section leaving my Name, Phone number, and email address.
+
+•As a user I can have a confirmation via my reservation once this has been approved by a site admin.
+
+•As a user I can cancel my reservation at any time via my account once I am logged in.
+
+•As a user I can edit my reservation so that I can change time or give more information for what I need from the staff.
+
+•As a user I can create an account so that I can see my and manage my reservations.
+
+•As a user I can describe my dietary requirements via the reservation section so that I can get the awareness needed from onsite staff.
+
+•As a user I can see where the Restaurant is located on the map so I can visit also with the contact information and phone number of the Restaurant.
+
+•As a user I can see the available times in the booking sections so I can plan the best time to visit the Restaurant.
+
+
+### Staff Member
+
+• As an admin I can see what reservation has been left by the user so I can prepare other staff members at the restaurant for it.
+
+• As an admin I can see what times have been booked by the Users so staff members can prepare for those users once they come in.
+
+• As an admin I can see a user has left their contact details along with signing up with an account so I can contact them any time by email if need be.
+
+• As an admin I can see the reservation ID so I can link that to billing.
+
+• As an admin I can see the address so that I now where to go.
+
+• As an admin I can make updates to existing users reservations so that they can see I have made a reply to their booking.
+
+• As an admin I can Update a reservation for a user so other staff members know that a reservation ticket has been dealt with and not repeat the same enquiries.
+
 
 ![agile user stories](https://user-images.githubusercontent.com/65243328/176654146-d7dea048-805a-4891-9ca7-b1931a889363.JPG)
 ![agile user stories complete](https://user-images.githubusercontent.com/65243328/176654148-106424df-7202-43ee-90a3-b2b340415ce4.JPG)
@@ -38,6 +94,9 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 ### Purpose
 The Application is designed as a restaurant website which will be the first introduction to the user of what they can expect to find and enjoy their restaurant experience. The site provides an idea of the dishes available, the location of the restaurant and allows the user to be able to Manage their booking and reservation.
 
+The Application purpose is also to inspire users to try new food and new recipes and attract them to relish in never before tried fusion recipes.
+
+This will give the incentive of Users sharing these with other potential customers bringing more awareness to the site.
   
 ### Wireframes
 
@@ -53,25 +112,25 @@ Each page's wireframes include mobile(small screen) & desktop(large screens).
 
 ![coolors ghit](https://user-images.githubusercontent.com/65243328/174058277-86a93d21-2654-4ed0-a6f1-d3cf6e754b8a.JPG)
 
-#000002 Rich Black used Gradient for the main bulk of the site. To give the clean aesthetic.
+• #000002 Rich Black used Gradient for the main bulk of the site. To give the clean aesthetic.
 
 
-#59CBCF Dark Turquoise for the Buttons on the site to help them stand alone.
+• #59CBCF Dark Turquoise for the Buttons on the site to help them stand alone.
 
 
-#DED9D9 Gainsboro for the intermediary positions of the site to help create balance.
+• #DED9D9 Gainsboro for the intermediary positions of the site to help create balance.
 
 
-#D4CE91 Medium Champagne on the menu sections of the website to help the food and drinks stand out.
+• #D4CE91 Medium Champagne on the menu sections of the website to help the food and drinks stand out.
 
 
-#446D03 Dark Olive Green on some of the vegetables of the website.
+• #446D03 Dark Olive Green on some of the vegetables of the website.
 
 
-#25252F Raisin Black on the Gradient of the main bulk of the site.
+• #25252F Raisin Black on the Gradient of the main bulk of the site.
 
 
-#FCFBF8 Baby powder on the intermediary positions of the site to help create balance.
+• #FCFBF8 Baby powder on the intermediary positions of the site to help create balance.
 
 
 
@@ -111,15 +170,15 @@ Allowing new users to sign up to the site to manage reservations and existing us
 
 Manage Reservation page
 
-Allowing existing users to View and Manage their reservations that have been approved by the Admin.
+• Allowing existing users to View and Manage their reservations that have been approved by the Admin.
 
-Edit a Reservation
+• Edit a Reservation
 
-Allowing existing users to make changes to their approved existing reservation.
+• Allowing existing users to make changes to their approved existing reservation.
 
-Delete a Reservation
+• Delete a Reservation
 
-Allowing existing users to delete their approved existing reservation.
+• Allowing existing users to delete their approved existing reservation.
 
 ![update delete reservations](https://user-images.githubusercontent.com/65243328/176655229-030d667c-92d3-4155-9472-c826262efeaf.JPG)
 
@@ -138,87 +197,113 @@ Allowing users to be able to have a delivery future and order directly from the 
 ## Deployment
 The site was deployed to Heroku. The below steps were carried out to deploy.
 
-Deployment steps add the list of requirements by writing in the terminal "pip3 freeze > requirements.txt"
+• Deployment steps add the list of requirements by writing in the terminal "pip3 freeze > requirements.txt"
 
-Git add and git commit the changes made
+• Git add and git commit the changes made
 
-Log into Heroku or create a new account and log in
+• Log into Heroku or create a new account and log in
 
-top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+• top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
 
-Write app name - it has to be unique, it cannot be the same as this app
+• Write app name - it has to be unique, it cannot be the same as this app
 
-Choose Region - Europe selected in this instance
+• Choose Region - Europe selected in this instance
 
-Click "Create App"
+• Click "Create App"
 
-The page of your project opens. 8. Choose "settings" from the menu on the top of page 9. Go to section "Config Vars" and click button "Reveal Config Vars"
+• The page of your project opens. 8. Choose "settings" from the menu on the top of page 9. Go to section "Config Vars" and click button "Reveal Config Vars"
 
-Go to git pod and copy the content of "creds.json" file
+• Go to git pod and copy the content of "creds.json" file
 
-In the field for "KEY" enter "CREDS" - all capital letters
+• In the field for "KEY" enter "CREDS" - all capital letters
 
-Paste the content of "creds.json" and paste to field "VALUE" Click button "Add"
+• Paste the content of "creds.json" and paste to field "VALUE" Click button "Add"
 
-Add another key "PORT" and value "8000"
+• Add another key "PORT" and value "8000"
 
-Go to section "Build packs" and click "Add build pack"
+• Go to section "Build packs" and click "Add build pack"
 
-in this new window - click Python and "Save changes" click "Add build pack" again in this new window - click Node.js and "Save changes" take care to have those apps in this order: Python first, Node.js second, drag and drop if needed Next go to "Deploy" in the menu bar on the top
+• in this new window - click Python and "Save changes" click "Add build pack" again in this new window - click Node.js and "Save changes" take care to have those apps in this order: Python first, Node.js second, drag and drop if needed Next go to "Deploy" in the menu bar on the top
 
-Go to section "deployment method", choose "GitHub"
+• Go to section "deployment method", choose "GitHub"
 
-New section will appear "Connect to GitHub" - Search for the repository to connect to
+• New section will appear "Connect to GitHub" - Search for the repository to connect to
 
-type the name of your repository and click "search"
+• type the name of your repository and click "search"
 
-once Heroku finds your repository - click "connect"
+• once Heroku finds your repository - click "connect"
 
-Scroll down to the section "Automatic Deploys"
+• Scroll down to the section "Automatic Deploys"
 
-Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+• Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
 
-Click "Deploy branch"
+• Click "Deploy branch"
 
-Once the program runs: you should see the message "the app was successfully deployed" 23. Click the button "View"
+• Once the program runs: you should see the message "the app was successfully deployed" 23. Click the button "View"
 
-Forking the GitHub repository By forking out of this repository you will be able to view and edit the code without affecting the original repository.
+• Forking the GitHub repository By forking out of this repository you will be able to view and edit the code without affecting the original repository.
 
-Locate the GitHub repository. Link can be found here: GHIT Restaurant Click the button in the top right-hand corner "Fork" This will take you to your own repository to a fork that is called the same as the original branch.
+• Locate the GitHub repository. Link can be found here: GHIT Restaurant Click the button in the top right-hand corner "Fork" This will take you to your own repository to a fork that is called the same as the original branch.
 
-Making a local clone Locate the GitHub repository. Link can be found here. Next to the green Gitpod button you will see a button "code" with an arrow pointing down You are given the option to open with GitHub desktop or download zip You can also copy https full link, go to git bash and write git clone and paste the full link
+• Making a local clone Locate the GitHub repository. Link can be found here. Next to the green Gitpod button you will see a button "code" with an arrow pointing down You are given the option to open with GitHub desktop or download zip You can also copy https full link, go to git bash and write git clone and paste the full link
 
 
 ## Technologies Used
 Python All packages used can be found in the [requirements.txt](https://github.com/MikaCodez/GHITrestaurant/blob/main/requirements.txt) File.
+
 HTML - Used for the template structures.
+
 CSS - Used to style the markup.
+
 Javascript - Custom use minimal, to set a timeout on bootstrap messages.
+
 GitHub - to store the overall project repository.
+
 GitPod - used as a workspace to do the coding.
+
 Django - django frameworks to manage apps.
+
 Figma - To design the wireframe of the complete project.
+
 Google Fonts - to brandize 'Harmonic Poems' with google fonts. Used for logo and all the written content.
+
 Fontawesome - fontawesome icons for social media links and as additional design.
+
 Bootstrap - grid, layout, columns, cards and forms structure.
+
 Heroku - for the deployment of the project.
+
 Coolors - to choose the colour palette and colour shades.
+
 PostgreSQL - database storage of the models.
+
 Cloudinary - image and static files storage.
+
 AmIResponsive - responsiveness of the site.
+
 Lighthouse - used for testing site functionality.
+
 PEP8 - used for Python files testing.
+
 W3C Markup Validation Service - used for HTML testing.
+
 W3C CSS Validation Service - used for CSS testing
 
 ## Resources
 Code Institute's Slack Community.
+
 Code Institute's Codestar Django Blog was used in the beginning stages of the development of this project. 
+
 Django Documentation - Heavy Reliance on Django documentation to implement forms, models, views etc.
+
 W3Schools documentation for CSS
+
 Bootstrap Documentation - For implementing Bootstrap styles across project
+
 Google
+
 Stack overflow
+
 Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com and Pretty Printed especially when it came to views and models in py
 
 
@@ -226,7 +311,7 @@ Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com and Pretty Pr
 
 SCOPE code credits to Code Institute, Django Blog Walkthrough Project. HTML template credit to Lucian Tartea. I have amended the code to my Restaurant sites specification.
 
-Credits also due to Code Institute staff for helping especially Tutor Support. Special Shout out to Rebecca, Scott and Alex. I relied on them heavily during Crunch time and they pulled through and managed to help me when I was at breaking points.
+Credits also due to Code Institute staff for helping especially Tutor Support. Special Shout out to Rebecca, Ed, Scott and Alex. I relied on them heavily during Crunch time and they pulled through and managed to help me when I was at breaking points.
 
 Also special shouts to Tom from Slack Community. Life Save and helped guide me when it came to implementing Static files for my project.
 
