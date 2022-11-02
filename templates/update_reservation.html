@@ -25,7 +25,6 @@
     <form method="post">
         {% csrf_token %}
         {{ form |crispy }}
-        {% for field in form %}
 
         <div class="form-group {% if field.errors %} alert alert-danger {% endif %}">
             {{ field.errors }}
