@@ -53,7 +53,6 @@ class CreateReservation(PageTitleViewMixin, View):
         return redirect("reservation_detail")
 
 
-# @login_required
 class UpdateReservation(LoginRequiredMixin, PageTitleViewMixin, UpdateView):
     """Class View to update an existing Reservation"""
 
@@ -65,7 +64,6 @@ class UpdateReservation(LoginRequiredMixin, PageTitleViewMixin, UpdateView):
     success_url = reverse_lazy("reservation_detail")
 
 
-# @login_required
 class DeleteReservation(LoginRequiredMixin, PageTitleViewMixin, DeleteView):
     """Class view to delete a Reservation"""
 
